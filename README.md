@@ -1,3 +1,25 @@
-# PW1 Lab A
+# CSPC — Computer Science for Physics and Chemistry
 
-This project contains the decay simulation for Lab A.
+My coursework repository. Each practical is under PW<n>/Lab <X>/.
+
+## Setup
+Create the environment for a given lab:
+```bash
+conda env create -f PW<n>/Lab\ <X>/environment.yml
+conda activate cspc
+
+What I built:
+Set up the cspc Conda environment, built the CSPC repository structure, tracked simulation files, implemented automated unit tests, and benchmarked loop vs NumPy execution speed.
+
+Speed comparison (loop vs NumPy):
+
+loop: 2.5823 s
+
+numpy: 0.0003 s
+
+speed-up: 9734.41x faster
+
+Tests: all passing? yes
+
+Conclusion:
+Successfully established a reproducible development workflow using Conda, Git, and pytest. Vectorizing the decay simulation using NumPy achieved a ~9734x performance improvement over the pure-Python loop. Unit testing verified proper exception handling for negative rates and confirmed agreement with the physical exponential decay law.
